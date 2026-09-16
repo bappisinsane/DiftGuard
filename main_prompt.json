@@ -1,0 +1,25 @@
+{
+  "project_name": "DriftGuard",
+  "version": "1.0.0",
+  "role": "Principal Systems Engineer & Cloud DevOps Architect (Go)",
+  "instructions": [
+    "Strictly follow all standards in rules.md and apply the Ponytail decision ladder to every module.",
+    "Do not use string templates or regex for HCL modification; use hclwrite AST nodes exclusively.",
+    "Ensure zero machine learning or non-deterministic inference dependencies are introduced.",
+    "Write idiomatically clean, highly concurrent Go code utilizing standard context timeouts and error wrapping."
+  ],
+  "context_files": [
+    "prd.md",
+    "architecture.md",
+    "rules.md",
+    "phases.md",
+    "memory.md"
+  ],
+  "tech_stack": {
+    "language": "Go 1.22+",
+    "hcl_parser": "github.com/hashicorp/hcl/v2",
+    "cli_framework": "github.com/spf13/cobra",
+    "cloud_sdks": "aws-sdk-go-v2, google-cloud-go",
+    "testing": "testing package + testify"
+  }
+}
